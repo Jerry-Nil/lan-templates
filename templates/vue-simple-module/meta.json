@@ -1,0 +1,32 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Module name",
+      "key": "__module_name__"
+    },
+    "useTypeScript": {
+      "type": "confirm",
+      "message": "是否使用 TypeScript?",
+      "default": true,
+      "key": "__module_lang__"
+    },
+    "cssPreprocessor": {
+      "type": "list",
+      "message": "选择 CSS 预处理器",
+      "choices": [
+        { "name": "无", "value": "css" },
+        { "name": "Scss", "value": "scss" },
+        { "name": "Less", "value": "less" }
+      ],
+      "key": "__module_style_lang__"
+    },
+    "style_scoped": {
+      "type": "confirm",
+      "required": true,
+      "label": "Scoped styles",
+      "key": "__module_style_scoped__"
+    }
+  }
+}
