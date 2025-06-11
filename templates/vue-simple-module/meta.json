@@ -1,32 +1,28 @@
 {
   "prompts": {
-    "name": {
+    "__module_name__": {
       "type": "string",
-      "required": true,
-      "label": "Module name",
-      "key": "__module_name__"
+      "message": "请输入模块名称",
+      "required": true
     },
-    "useTypeScript": {
+    "__module_lang__": {
       "type": "confirm",
       "message": "是否使用 TypeScript?",
-      "default": true,
-      "key": "__module_lang__"
+      "default": true
     },
-    "cssPreprocessor": {
+    "__module_style_lang__": {
       "type": "list",
       "message": "选择 CSS 预处理器",
       "choices": [
         { "name": "无", "value": "css" },
         { "name": "Scss", "value": "scss" },
         { "name": "Less", "value": "less" }
-      ],
-      "key": "__module_style_lang__"
+      ]
     },
-    "style_scoped": {
+    "__module_style_scoped__": {
       "type": "confirm",
-      "required": true,
-      "label": "Scoped styles",
-      "key": "__module_style_scoped__"
+      "message": "是否使用 Scoped CSS?",
+      "required": true
     }
   }
 }
