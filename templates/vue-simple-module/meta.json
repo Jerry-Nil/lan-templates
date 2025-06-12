@@ -24,5 +24,34 @@
       "message": "是否使用 Scoped CSS?",
       "required": true
     }
+  },
+  "varsParseMap": {
+    "__module_name_class__": {
+      "type": "transform",
+      "source": "__module_name__",
+      "processor": "kebabCase"
+    },
+    "__module_lang__": {
+      "type": "map",
+      "map": [
+        [true, "lang=\"ts\""],
+        [false, ""]
+      ]
+    },
+    "__module_style_lang__": {
+      "type": "map",
+      "map": [
+        ["css", "lang=\"css\""],
+        ["less", "lang=\"less\""],
+        ["scss", "lang=\"scss\""]
+      ]
+    },
+    "__module_style_scoped__": {
+      "type": "map",
+      "map": [
+        [true, "scoped"],
+        [false, ""]
+      ]
+    }
   }
 }
